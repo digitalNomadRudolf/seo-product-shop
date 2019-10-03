@@ -19,8 +19,8 @@ render() {
         // Replace with the ID of your SKU
         {sku: 'sku_Fv8EPmLmqNaJDC', quantity: 1}
       ],
-      successUrl: 'http://localhost:8000/success',
-      cancelUrl: 'http://localhost:8000/cancel',
+      successUrl: 'https://digital-marketing-shop.netlify.com//success',
+      cancelUrl: 'https://digital-marketing-shop.netlify.com/cancel',
     }).then(function (result) {
       if (result.error) {
       // If `redirectToCheckout` fails due to a browser or network

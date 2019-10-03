@@ -35,11 +35,8 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-       if(window) {
-          <main className={`maincontent ${window.location.pathname !== '/products' ? 'addbg' : 'takeflex'}`}>{children}</main>
-        } else {
           <main className={`maincontent`}>{children}</main>
-        }
+        
         {/* <footer className="footer">
           © {new Date().getFullYear()}, Built with
           {` `}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProdLayout from '../components/prodlayout';
+import Layout from '../components/layout';
 import { StaticQuery, graphql } from 'gatsby';
 
 class Product extends Component {
@@ -66,7 +66,7 @@ export default () => (
             }
           }`}
         render={data => (
-          <ProdLayout>
+          <Layout>
             {data.allStripeSku.edges.map(({ node: sku }, i) => (
               <Product 
                 key={i}
@@ -76,7 +76,7 @@ export default () => (
                 name={sku.attributes.name}
               />
             ))}
-          </ProdLayout>
+          </Layout>
         )}
     />
 )

@@ -35,8 +35,8 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-       if(this.location.pathname) {
-          <main className={`maincontent ${this.location.pathname !== '/products' ? 'addbg' : 'takeflex'}`}>{children}</main>
+       if(window) {
+          <main className={`maincontent ${window.location.pathname !== '/products' ? 'addbg' : 'takeflex'}`}>{children}</main>
         } else {
           <main className={`maincontent`}>{children}</main>
         }

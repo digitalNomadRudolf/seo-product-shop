@@ -19,8 +19,8 @@ class Product extends Component {
                   // Replace with the ID of your SKU
                   {sku, quantity: 1}
                 ],
-                successUrl: '/success',
-                cancelUrl: '/cancel',
+                successUrl: 'https://digital-marketing-shop.netlify.com/success',
+                cancelUrl: 'https://digital-marketing-shop.netlify.com/cancel',
               }).then(function (result) {
                 if (result.error) {
                 console.error(result.error.message);

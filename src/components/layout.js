@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main className="maincontent">{children}</main>
+        <main className={`maincontent ${this.location.pathname !== '/products' ? 'addbg' : 'takeflex'}`}>{children}</main>
         {/* <footer className="footer">
           © {new Date().getFullYear()}, Built with
           {` `}

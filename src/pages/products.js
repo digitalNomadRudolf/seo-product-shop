@@ -19,8 +19,8 @@ class Product extends Component {
                   // Replace with the ID of your SKU
                   {sku, quantity: 1}
                 ],
-                successUrl: 'http://localhost:8000/success',
-                cancelUrl: 'http://localhost:8000/cancel',
+                successUrl: '/success',
+                cancelUrl: '/cancel',
               }).then(function (result) {
                 if (result.error) {
                 console.error(result.error.message);
